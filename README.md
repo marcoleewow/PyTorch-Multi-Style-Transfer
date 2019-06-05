@@ -1,5 +1,25 @@
 # PyTorch-Style-Transfer
 
+[Update by @marcoleewow]
+By using docker image `floydhub/pytorch:0.3.0-gpu.cuda9cudnn7-py3.24` and the `output_folder.sh` in `experiments/`, I was able to style transfer the donkey car images.
+
+*Usage*
+install nvidia-docker and set docker default runtime to nvidia
+
+```
+git clone git@github.com:marcoleewow/PyTorch-Multi-Style-Transfer.git 
+
+cd PyTorch-Multi-Style-Transfer
+
+docker run -ti -v `pwd`:/workspace floydhub/pytorch:0.3.0-gpu.cuda9cudnn7-py3.24 bash
+
+pip install requirements.txt
+
+cd experiments/
+
+./output_folder.sh --style <INSERT_HERE> --cuda 1 --start 0 --end <INSERT_NUM_IMAGES_HERE> --dir <YOUR_TUB_DATA_DIR>
+
+```
 This repo provides PyTorch Implementation of **[MSG-Net (ours)](#msg-net)** and **[Neural Style (Gatys et al. CVPR 2016)](#neural-style)**, which has been included by [ModelDepot](https://modeldepot.io/zhanghang/multi-style-generative-network-for-real-time-transfer/overview). We also provide [Torch implementation](https://github.com/zhanghang1989/MSG-Net/) and [MXNet implementation](https://github.com/zhanghang1989/MXNet-Gluon-Style-Transfer).
 
 **Tabe of content**

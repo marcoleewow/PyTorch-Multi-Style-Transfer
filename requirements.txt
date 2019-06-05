@@ -1,0 +1,11 @@
+ torch==0.3.0.post4
+ markdown==2.2.0
+ protobuf==3.3.0
+ tensorflow==1.2.0
+ werkzeug==0.12.2
+ chatterbot==0.8.4
+ opencv-python==3.4.0.12
+ face_recognition==1.2.1
+ pyyaml==3.12
+ torch==0.3.0.post4
+ dlib==19.9.0
